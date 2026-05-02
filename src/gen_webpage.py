@@ -1,7 +1,7 @@
 """
 TCB static site generator.
 
-Generates the TCB website from Jinja2 templates into the output/ directory.
+Generates the TCB website from Jinja2 templates into the docs/ directory.
 Optionally fetches editorial board data from OpenReview when credentials are available.
 """
 import os
@@ -14,7 +14,7 @@ YEAR = datetime.today().year
 def render_webpage(env, page, base_url, template_kw=None):
     if template_kw is None:
         template_kw = {}
-    dest = os.path.join("output", page)
+    dest = os.path.join("docs", page)
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     with open(dest, "w") as f:
         template = env.get_template(page)
@@ -147,9 +147,9 @@ def try_get_papers():
 
 
 def gen_bibtex(papers):
-    os.makedirs(os.path.join("output", "papers", "bib"), exist_ok=True)
+    os.makedirs(os.path.join("docs", "papers", "bib"), exist_ok=True)
     for p in papers:
-        bib_path = os.path.join("output", "papers", "bib", f"{p['id']}.bib")
+        bib_path = os.path.join("docs", "papers", "bib", f"{p['id']}.bib")
         with open(bib_path, "w") as f:
             f.write(p['bibtex'])
 
@@ -193,4 +193,4 @@ if __name__ == "__main__":
         render_webpage(env, page, base_url, context)
         print(f"Generated {page}")
 
-    print("Done. Output written to output/")
+    print("Done. Output written to docs/")

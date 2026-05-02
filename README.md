@@ -27,7 +27,7 @@ pip install -r requirements.txt
 make
 ```
 
-The generated site is written to `output/`.
+The generated site is written to `docs/`.
 
 ## Pages
 
