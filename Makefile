@@ -13,8 +13,8 @@ webpage: dirs
 	python src/gen_webpage.py
 
 static: webpage
-	cp -r static/img/ docs/ 2>/dev/null || true
-	cp -r static/css/ docs/ 2>/dev/null || true
+	cp -r static/img docs/ 2>/dev/null || true
+	cp -r static/css docs/ 2>/dev/null || true
 
 test:
 	python -m pytest -vv src/tests/
