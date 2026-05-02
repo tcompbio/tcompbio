@@ -1,0 +1,255 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+  <!-- favicon -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<title>Transactions on Computational Biology</title>
+
+<style type="text/css">
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #2070A0;
+}
+
+#fixed {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 20px;
+    width: 11em;
+    height: 100%;
+}
+
+ul#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul#nav li {
+  margin: 0;
+}
+
+ul#nav li a {
+  display: block;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+ul#nav li a:hover {
+  color: #000000;
+}
+
+body{
+    font-size: 18px;
+}
+
+#content {
+    margin-top: 1em;
+    margin-left: 12em;
+    margin-right: 1em;
+}
+
+img.tcb {
+    width: 7em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+  <div id="fixed">
+  <br>
+  <a align="center" href="/index.html" target=_top><img style="margin-bottom: 1em" align="center" class="tcb" src="/img/tcb.svg" border="0" alt="TCB"></a>
+  <br>
+  <ul id="nav">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/papers/">Papers</a></li>
+    <li><a href="/submissions.html">Submissions</a></li>
+    <li><a href="/editorial-policies.html">Submission Guidelines and Editorial Policies</a></li>
+    <li><a href="/acceptance-criteria.html">Acceptance Criteria</a></li>
+    <li><a href="/author-guide.html">Author Guidelines</a></li>
+    <li><a href="/reviewer-guide.html">Reviewer Guidelines</a></li>
+    <li><a href="/ae-guide.html">Action Editor Guidelines</a></li>
+    <li><a href="/ethics.html">Ethics Guidelines</a></li>
+    <li><a href="/code.html">Code of Conduct</a></li>
+    <li><a href="/editorial-board.html">Editorial Board</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/faq.html">FAQs</a></li>
+  </ul>
+  </div>
+
+<div class="container">
+<div id="content">
+    
+    <h1>Submission Guidelines and Editorial Policies</h1>
+
+    <h2>Scope</h2>
+    <p>TCB's objective is to publish original, novel papers that advance the understanding of biological
+        systems through computational approaches. This includes contributions in algorithms, mathematical
+        modeling, statistical methodology, machine learning applied to biology, and software tools, as
+        well as computational analyses that provide new biological insight.</p>
+
+    <p>Areas in scope include (but are not limited to): sequence analysis, structural bioinformatics,
+        systems biology, regulatory genomics, transcriptomics, proteomics, metagenomics, single-cell
+        analysis, spatial biology, evolutionary computation, computational neuroscience, and the
+        development of biological databases and benchmarks.</p>
+
+    <p>Papers that apply computational methods to biological problems outside this scope, or that are
+        primarily experimental biology without a substantial computational contribution, may be desk
+        rejected.</p>
+
+    <h2 id="novelty">Novelty</h2>
+    <p>TCB requires that every accepted paper make a novel contribution to the field of computational
+        biology. This is a departure from venues that accept papers on the basis of correctness alone.
+        The novel contribution may take any of the following forms:</p>
+    <ul>
+        <li>A new algorithm or data structure for a computational biology problem.</li>
+        <li>A new statistical or machine learning methodology for biological data analysis.</li>
+        <li>A new software tool or resource of demonstrated utility to the computational biology community.</li>
+        <li>A new biological insight or discovery enabled by computation.</li>
+        <li>A novel application of existing computational methods to an unstudied or poorly studied
+            biological problem, provided the application yields non-trivial new biological understanding.</li>
+    </ul>
+    <p>Pure replications of prior work, incremental parameter sweeps, and straightforward applications
+        of off-the-shelf methods to new datasets without methodological or biological insight are not
+        considered novel and will not be accepted.</p>
+
+    <h2 id="code">Code Requirement</h2>
+    <p>All submissions to TCB must include source code sufficient to reproduce the key results of the
+        paper. This is a mandatory requirement and not a recommendation.</p>
+    <ul>
+        <li>During submission, code should be uploaded as supplementary material (ZIP archive) or as a
+            link to a public repository.</li>
+        <li>Upon acceptance, code must be made publicly accessible via a persistent public repository
+            (e.g., GitHub, GitLab, or Zenodo), with a citable DOI where possible.</li>
+        <li>Code should be documented with at minimum a README that explains how to run it and reproduce
+            the main results of the paper.</li>
+    </ul>
+    <p>Papers that describe purely theoretical contributions with no computational experiments may apply
+        for an exemption. Such exemptions must be explicitly requested at submission time and will be
+        evaluated by the assigned Action Editor.</p>
+
+    <h2 id="reviewing">Review Process</h2>
+    <p>TCB uses a <span class="bold">single-blind review process</span>. Reviewers are aware of the
+        authors' identities; authors do not know the identities of their reviewers. Submissions are
+        therefore not required to be anonymized.</p>
+
+    <p>Upon submission, an Action Editor (AE) is assigned from TCB's editorial board. The AE first
+        performs an initial check to ensure the submission is in scope, novel, includes code, and
+        otherwise meets submission requirements. If appropriate, the submission is sent for review to
+        three referees. After all reviews are submitted, an open-ended discussion and revision phase
+        allows authors to respond to reviewers and update their manuscript. The AE then makes a final
+        decision.</p>
+
+    <h2 id="evaluation">Evaluation Criteria</h2>
+    <p>All submissions are evaluated on the following criteria. See the
+        <a href="acceptance-criteria.html">Acceptance Criteria</a> page for full details.</p>
+    <ol>
+        <li>Are the claims made in the submission supported by accurate, convincing and clear evidence?</li>
+        <li>Does the submission make a novel contribution to computational biology?</li>
+        <li>Does the submission include openly available source code?</li>
+        <li>Would at least some individuals in TCB's audience be interested in the findings of this paper?</li>
+    </ol>
+
+    <h2 id="decisions">Decisions</h2>
+    <p>An AE may reach one of the following decisions:</p>
+    <ul>
+        <li><span class="bold">Accept as is.</span> The paper is accepted in its current form.</li>
+        <li><span class="bold">Accept with minor revisions.</span> The paper will be accepted once
+            specified minor revisions are made and verified by the AE.</li>
+        <li><span class="bold">Reject.</span> The paper does not meet TCB's criteria for acceptance.
+            Authors may not resubmit the same paper within 6 months of a rejection.</li>
+    </ul>
+
+    <h2 id="dual-submission">Dual Submission Policy</h2>
+    <p>TCB does not accept submissions that are currently under review at another peer-reviewed venue,
+        or that have been published (or accepted for publication) in any archival venue with overlapping
+        content. Posting a preprint to arXiv or another preprint server does not constitute prior
+        publication and is permitted. Authors must disclose any substantially overlapping prior or
+        concurrent work at the time of submission.</p>
+
+    <h2 id="submission-requirements">Submission Requirements</h2>
+    <ul>
+        <li>Submissions must be in PDF format, prepared using the TCB LaTeX stylefile and template.</li>
+        <li>Submissions may be any length; length should be justified by content.</li>
+        <li>An Appendix may be included after the references for supplementary proofs or results.</li>
+        <li>Supplementary material (up to 100 MB) may include data, code, or videos in PDF or ZIP format.</li>
+        <li>Source code must be included (see above).</li>
+        <li>Since TCB uses single-blind reviewing, submissions need not be anonymized.</li>
+    </ul>
+
+    <h2 id="certifications">Certifications</h2>
+    <p>TCB uses a certification system to highlight particularly noteworthy accepted papers.
+        Certifications are awarded in the following categories:</p>
+    <ul>
+        <li><span class="bold">Outstanding Certification.</span> Awarded by the TCB editorial board
+            to papers of exceptional quality and broad significance.</li>
+        <li><span class="bold">Featured Certification.</span> Awarded to high-quality papers presenting
+            significant, novel, and well-supported contributions.</li>
+        <li><span class="bold">Software Certification.</span> Awarded to papers whose primary
+            contribution is a high-quality, publicly available software tool.</li>
+        <li><span class="bold">Reproducibility Certification.</span> Awarded to papers that carefully
+            reproduce and extend prior computational biology results with added value.</li>
+        <li><span class="bold">Survey Certification.</span> Awarded to papers providing an
+            exceptionally thorough survey of a topic or methodology.</li>
+    </ul>
+
+    <h2 id="open-access">Open Access</h2>
+    <p>All accepted TCB papers are published open access. From the time of submission to final
+        publication, all papers are licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        Copyright is retained by the authors at all times.</p>
+
+
+
+    <table width="100%"> <tr>
+    <td
+    align="right"><font size="-1">&copy; <a target="_top"
+    href="/">TCB</a> 2026. </td> </tr> </table>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</div>
+</body>
+</html>
