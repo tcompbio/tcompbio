@@ -1,1 +1,6 @@
-jinja2
+# Core dependency for static site generation
+jinja2>=3.0.0,<4.0.0
+
+# Optional: required only when fetching data from OpenReview (OR_USER/OR_PASS env vars)
+# openreview-py>=1.0.0
+# unidecode>=1.0.0
