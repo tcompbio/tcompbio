@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Acceptance Criteria</h1>
+
+    <p>
+        Acceptance of a submission to TCB should be based on positive answers to all four of the
+        following questions.
+    </p>
+
+    <p>
+        <span class="bold">Are the claims made in the submission supported by accurate, convincing and clear evidence?</span>
+    </p>
+    <p>
+        This is the most fundamental criterion. Reviewers should assess the technical soundness of the
+        work, the clarity of the narrative, and the strength of the evidence provided.
+    </p>
+    <p>
+        Any gap between claims and evidence must be addressed by the authors. Often this will require
+        additional experiments or analyses, but authors may alternatively choose to adjust (reduce)
+        their claims to match the available evidence.
+    </p>
+
+    <p>
+        <span class="bold">Does the submission make a novel contribution to computational biology?</span>
+    </p>
+    <p>
+        TCB requires novelty. A submission must advance the state of the art—whether through a new
+        algorithm, a new analysis methodology, a new biological insight enabled by computation, a new
+        software tool, or a novel application of existing computational methods to an unstudied biological
+        problem. Incremental variations of existing methods without meaningful biological or computational
+        insight are not sufficient.
+    </p>
+    <p>
+        Reviewers should assess novelty relative to the existing literature. Reproducing prior results
+        without substantial new contributions—computational, methodological, or biological—does not satisfy
+        this criterion.
+    </p>
+
+    <p>
+        <span class="bold">Does the submission include openly available source code?</span>
+    </p>
+    <p>
+        TCB requires that all submissions include source code sufficient to reproduce the key results of the
+        paper. Code must be made publicly accessible (e.g., via a public repository such as GitHub or Zenodo)
+        upon acceptance. During the review process, code may be provided in anonymized or supplementary form.
+        Reviewers are expected to check that the submitted code is reasonably complete and can, in principle,
+        reproduce the claimed results.
+    </p>
+    <p>
+        Papers that describe purely theoretical contributions without any computational experiments are exempt
+        from this requirement, but this exemption must be explicitly justified.
+    </p>
+
+    <p>
+        <span class="bold">Would some individuals in TCB's audience be interested in the findings of this paper?</span>
+    </p>
+    <p>
+        This criterion should be interpreted broadly. TCB's audience includes computational biologists,
+        bioinformaticians, and biologists who use computational tools. If a subset of this audience would
+        benefit from reading the paper, this criterion is satisfied. Reviewers who are uncertain should
+        assume the criterion is met.
+    </p>
+    <p>
+        This criterion should <i>not</i> be used to reject work simply because it is narrowly focused or
+        addresses a niche biological problem. Depth and specificity in computational biology are virtues.
+    </p>
+
+{% endblock %}

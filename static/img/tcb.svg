@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#1a5276" stroke="#154360" stroke-width="2"/>
+  <!-- DNA helix suggestion -->
+  <path d="M40 25 Q60 40 80 25" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 35 Q60 50 80 35" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 45 Q60 60 80 45" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 55 Q60 70 80 55" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 65 Q60 80 80 65" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 75 Q60 90 80 75" stroke="#7fb3d3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Vertical strands -->
+  <line x1="40" y1="25" x2="40" y2="75" stroke="#d6eaf8" stroke-width="2.5"/>
+  <line x1="80" y1="25" x2="80" y2="75" stroke="#d6eaf8" stroke-width="2.5"/>
+  <!-- TCB text -->
+  <text x="60" y="105" font-family="Arial, sans-serif" font-size="22" font-weight="bold"
+        text-anchor="middle" fill="white">TCB</text>
+</svg>
