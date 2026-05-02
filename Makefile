@@ -3,7 +3,7 @@ SHELL := /bin/bash
 all: static
 
 clean:
-	rm -rf docs
+	find docs -mindepth 1 -not -name 'CNAME' -delete 2>/dev/null || true
 
 dirs: clean
 	mkdir -p docs/news
