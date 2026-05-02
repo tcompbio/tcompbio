@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>TCB Guidelines for Action Editors</h1>
+
+<p>This document provides instructions for action editors (AE). Before reading this section, make sure
+    to also read and be familiar with the <a href="editorial-policies.html">Editorial Policies</a>,
+    the <a href="acceptance-criteria.html">Acceptance Criteria</a>,
+    the <a href="reviewer-guide.html">Reviewer Guidelines</a>,
+    the <a href="ethics.html">Ethics Guidelines</a>, and the <a href="code.html">Code of Conduct</a>.</p>
+
+<h2>Action Editor Responsibilities</h2>
+
+<p>As an AE, you are responsible for the following aspects of the review process.</p>
+
+<p><span class="bold">Annual Quota.</span>&nbsp; AE assignments are given on a rolling basis, as
+    submissions are received. The default quota is 12 papers per year, but it is possible to change it
+    through the OpenReview console, as well as to mark yourself temporarily unavailable for periods
+    such as illness, vacation, or work leave. You are generally
+    <span class="bold">expected to accept all AE requests</span> of submissions that fall within your
+    expertise and quota. Acceptable exceptions are a conflict of interest with one of the authors.</p>
+
+<p><span class="bold">Desk rejection of inappropriate submissions.</span>&nbsp; The first step following
+    an AE assignment is to determine (within 1 week) whether or not the submitted preprint is appropriate
+    for TCB and respects our <a href="editorial-policies.html">submission guidelines</a>. Clear cases of
+    desk rejection include:
+    <ul>
+        <li>Submissions that are clearly out of scope (not related to computational biology).</li>
+        <li>Submissions that do not use the TCB stylefile.</li>
+        <li>Submissions that clearly overlap with work already published in proceedings or currently
+            under review for publication elsewhere.</li>
+        <li>Submissions that lack any source code (unless an exemption has been requested and justified).</li>
+        <li>Submissions that make no novel contribution (e.g., pure replications without added value,
+            straightforward applications of off-the-shelf methods to a new dataset).</li>
+    </ul>
+    If you are unsure whether a submission should be desk rejected, reach out to the Editors-in-Chief.
+    Once you've confirmed that a submission is appropriate for TCB, the submission becomes public.</p>
+
+<p><span class="bold">Assignment of reviewers.</span>&nbsp; Once confirmed that a submission is
+    appropriate for TCB, you should assign it for review to
+    <span class="bold">3 reviewers</span>. You must make the initial assignment within one week of
+    accepting a paper's assignment. Avoid reviewers who have already filled their annual quota or
+    have an unsubmitted review for another TCB submission. By default, reviewers are asked to submit
+    their review within <span class="bold">2 weeks</span> of their assignment (or 4 weeks for
+    submissions over 12 pages).</p>
+
+<p><span class="bold">Post-review discussion.</span>&nbsp; Once the third review has been submitted,
+    the authors are given a chance to respond to reviewers' feedback, answer questions, and update their
+    manuscript accordingly. You are responsible for making sure reviewers engage actively in this
+    discussion. You may also participate yourself by asking questions directly to the authors or starting
+    private conversations via OpenReview involving only the reviewers to try to reach a consensus.</p>
+
+<p>Our <a href="ethics.html">Ethics Guidelines</a> describe TCB's ethical principles. If you or any of
+    the reviewers have concerns around the ethical implications of the submission, check whether the authors
+    address the concerns in a Broader Impact Statement. If you would like an additional reviewer with ethics
+    expertise, or if you suspect that no statement would make the work ethically acceptable, reach out to
+    the Editors-in-Chief.</p>
+
+<p>Based on their discussion with the authors, reviewers will submit their own recommendation no sooner
+    than 2 weeks and no later than 4 weeks after the submission of the third review.</p>
+
+<p><span class="bold">Decision and certification.</span>&nbsp; Once all 3 reviewer decision
+    recommendations have been submitted, you should aim to submit your decision proposal within 1 week.
+    Your decision proposal should therefore be submitted within 5 weeks of the beginning of the
+    discussion between authors and reviewers.</p>
+
+<p>There are 3 possible outcomes: <span class="bold">Accept</span>,
+    <span class="bold">Accept with minor revision</span>, and
+    <span class="bold">Reject</span>
+    (see <a href="editorial-policies.html">Editorial Policies</a>).
+    As described in the <a href="acceptance-criteria.html">Acceptance Criteria</a> page, acceptance
+    decisions should be based on four criteria:
+    <ul>
+        <li>Are the claims made in the submission supported by accurate, convincing and clear evidence?</li>
+        <li>Does the submission make a novel contribution to computational biology?</li>
+        <li>Does the submission include openly available source code?</li>
+        <li>Would at least some individuals in TCB's audience be interested in the findings of this paper?</li>
+    </ul>
+</p>
+
+<p>In addition to a decision, for accepted papers you may also recommend a
+    <span class="bold">certification</span> if you think the paper deserves additional recognition.
+    See the <a href="reviewer-guide.html">Reviewer Guidelines</a> for the list of available certifications.</p>
+
+<p><span class="bold">Final verification of camera-ready submission.</span>&nbsp; As your final task for
+    an accepted paper, you are asked to quickly verify that the camera-ready manuscript complies with the
+    TCB stylefile, with all author information inserted in the manuscript, the link to the OpenReview page,
+    and a publicly accessible code repository URL.</p>
+
+{% endblock %}

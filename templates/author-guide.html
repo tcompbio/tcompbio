@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>TCB Guidelines for Authors</h1>
+
+    <p>This document provides instructions for authors. Authors are required to also read and be
+        familiar with the <a href="editorial-policies.html">Editorial Policies</a>, the
+        <a href="acceptance-criteria.html">Acceptance Criteria</a>, the
+        <a href="ethics.html">Ethics Guidelines</a>, and the <a href="code.html">Code of Conduct</a>.</p>
+
+    <h2 id="overview">Overview of the Submission Process</h2>
+
+    <p>TCB uses a <span class="bold">single-blind review process</span>: reviewers are aware of the
+        authors' identities, but author identities are not disclosed to the public until a decision has
+        been made. Submissions do <i>not</i> need to be anonymized.
+        All authors must have complete and active OpenReview profiles, including affiliations,
+        conflicts of interest, and publication history.
+        Authors must also provide information on appropriate action editors for the submission, as well as
+        on human subjects reporting (IRB), funding, competing interests, and any relevant conflicts of interest.</p>
+
+    <p>Following submission, an action editor will be assigned and the paper will be evaluated to check
+        that it meets the criteria for the review process (e.g., it should be in scope, include source code,
+        and be complete). Then reviewers will be assigned to read and review the manuscript. An open-ended
+        rebuttal, discussion, and revision phase will allow authors to interact with reviewers and update
+        their paper. Finally, the action editor will enter a decision: either
+        <span class="bold">accept as is</span>,
+        <span class="bold">accept with minor revisions</span>, or
+        <span class="bold">reject</span>.
+        See the <a href="editorial-policies.html">Submission Guidelines and Editorial Policies</a>,
+        as well as the <a href="reviewer-guide.html">Reviewer</a> and
+        <a href="ae-guide.html">Action Editor Guidelines</a>, for more information.</p>
+
+    <h2 id="novelty">Novelty Requirement</h2>
+
+    <p>TCB requires that every submission make a clear novel contribution to computational biology.
+        This can take many forms: a new algorithm, a new methodology, new biological insights enabled
+        by computation, a new software tool, or a novel application of existing methods to an unstudied
+        problem. Authors should clearly articulate the novel contribution of their work in the introduction.</p>
+
+    <p>TCB does not accept pure replication studies, incremental parameter searches, or papers whose sole
+        contribution is applying an off-the-shelf method to a new dataset without methodological or
+        biological insight. See the <a href="acceptance-criteria.html">Acceptance Criteria</a> for details.</p>
+
+    <h2 id="code">Code Requirement</h2>
+
+    <p>All submissions to TCB must include source code sufficient to reproduce the key results of the paper.
+        This is a hard requirement and not merely a recommendation. During submission, code should be
+        uploaded as supplementary material (as a ZIP archive or a link to a public repository).
+        Upon acceptance, code must be made publicly accessible via a persistent public repository
+        (e.g., GitHub, GitLab, or Zenodo).</p>
+
+    <p>The code should be sufficiently documented so that a competent reader could reproduce the
+        main results without unreasonable effort. Reviewers will check that code is present and
+        reasonably complete; detailed code review is not expected.</p>
+
+    <p>Papers that describe purely theoretical contributions with no computational experiments may apply
+        for an exemption to the code requirement; such exemptions must be explicitly requested in the
+        submission and justified.</p>
+
+    <h2 id="broader-impact">Broader Impact Statement</h2>
+
+    <p>If their work carries a significant risk of harm (e.g., potential dual-use concerns in synthetic
+        biology, privacy risks from genomic data), authors are required to include a Statement of Broader
+        Impact. The statement should include a concise, concrete description of potential positive and
+        negative societal impact, as well as a discussion of possible mitigations. Please read the
+        <a href="ethics.html">Ethics Guidelines</a> for an in-depth discussion of risks and mitigating factors.</p>
+
+    <h2 id="format">Format</h2>
+
+    <p>Submissions may be any length, but a paper's length should be justified by its content.
+        Submissions must be PDF files generated using the TCB LaTeX stylefile and template.
+        The submission PDF may include an Appendix after the references (for proofs, derivations, or
+        supplementary results). Reviewers may choose whether to read the Appendix.</p>
+
+    <p>Authors may submit up to 100 MB of supplementary material, including data, source code, or videos;
+        all supplementary materials must be in PDF or ZIP format. Like the main submission,
+        supplementary material need not be anonymized.</p>
+
+    <h2 id="copyright">Copyright and Licensing</h2>
+
+    <p>All TCB submissions, from the time of submission to final publication, are licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        Copyright is retained by the authors at all times.
+        Authors are free to post their work to arXiv or other preprint servers at any time.</p>
+
+{% endblock %}

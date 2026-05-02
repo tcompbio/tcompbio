@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block extraheader %}
+<style>
+.paper {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+}
+.paper-title {
+    font-weight: bold;
+}
+.paper-authors {
+    color: #555;
+    font-size: 90%;
+}
+.paper-links {
+    font-size: 90%;
+}
+.certification-badge {
+    display: inline-block;
+    background: #e8f4e8;
+    border: 1px solid #7ab87a;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 80%;
+    margin-left: 5px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>TCB Papers</h1>
+
+<p>This page lists all papers accepted to Transactions on Computational Biology.</p>
+
+{% if papers %}
+  {% set ns = namespace(current_year=None) %}
+  {% for paper in papers %}
+    {% if paper.year != ns.current_year %}
+      {% set ns.current_year = paper.year %}
+      <h2>{{ paper.year }}</h2>
+    {% endif %}
+    <div class="paper">
+      <div class="paper-title">
+        <a href="{{ paper.openreview }}">{{ paper.title }}</a>
+        {% for cert in paper.certifications %}
+          <span class="certification-badge">{{ cert }}</span>
+        {% endfor %}
+      </div>
+      <div class="paper-authors">{{ paper.authors }}</div>
+      <div class="paper-links">
+        [<a href="{{ paper.openreview }}">OpenReview</a>]
+        [<a href="{{ paper.pdf }}">PDF</a>]
+        {% if paper.code %}[<a href="{{ paper.code }}">Code</a>]{% endif %}
+        [<a href="/papers/bib/{{ paper.id }}.bib">BibTeX</a>]
+      </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>No papers have been accepted yet. Check back soon!</p>
+{% endif %}
+
+{% endblock %}
