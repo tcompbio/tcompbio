@@ -83,7 +83,14 @@ def try_get_openreview_data():
     except Exception as exc:
         print(f'OpenReview data unavailable ({exc}); using empty lists.')
         return {
-            'editors_in_chief': [],
+            'editors_in_chief': [
+                {
+                    'name': 'David A Knowles',
+                    'url': 'https://daklab.github.io',
+                    'affiliation': 'Columbia University & New York Genome Center',
+                    'expertise': '',
+                }
+            ],
             'action_editors': [],
             'managing_editors': [],
         }
